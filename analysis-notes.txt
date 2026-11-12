@@ -1,0 +1,35 @@
+
+STATIC ANALYSIS REPORT
+Project: LegacyRefactoringLab
+
+1. Tool:
+clang-tidy
+
+2. Installed Version:
+[Paste output of clang-tidy --version]
+
+3. Commands Used:
+clang-tidy main.cpp -- -std=c++17
+
+clang-tidy main.cpp --checks="-*,readability-*,bugprone-*" -- -std=c++17
+
+4. Diagnostics Observed:
+[Write the actual warnings or messages shown]
+
+5. Issues Identified in Original Code:
+- Unclear variable names: p, q, t
+- Hard-coded discount threshold: 1000
+- Hard-coded discount rate: 0.10
+- Discount logic can be extracted into a separate function
+
+6. Planned Improvements:
+- Rename variables meaningfully
+- Create named constants
+- Extract the discount calculation
+- Compile and test after each change
+- Preserve the original output
+
+7. Expected Program Output:
+1125
+200
+1000
