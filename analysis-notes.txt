@@ -33,3 +33,33 @@ clang-tidy main.cpp --checks="-*,readability-*,bugprone-*" -- -std=c++17
 1125
 200
 1000
+
+STEP 11.6 - STATIC ANALYSIS AFTER REFACTORING
+
+Project: LegacyRefactoringLab
+
+File Analyzed: order.cpp
+
+Tool: clang-tidy
+
+Command Used:
+clang-tidy order.cpp -- -std=c++17
+
+Analysis Results:
+[Write the actual clang-tidy output here]
+
+Refactoring Improvements:
+1. Improved variable and function names.
+2. Introduced named constants.
+3. Extracted the discount calculation.
+4. Separated code into order.h, order.cpp, and main.cpp.
+5. Added characterization tests in test.cpp.
+
+Expected Program Output:
+1125
+200
+1000
+
+Testing:
+[Record whether all assertions passed]
+
